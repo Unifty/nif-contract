@@ -553,12 +553,12 @@ contract ERC20 is Context, IERC20 {
      */
     function _beforeTokenTransfer(address from, address to, uint256 amount) internal virtual { }
 }
-contract REKT is ERC20 {
+contract Unifty is ERC20 {
 
-    uint256 public constant INITIAL_SUPPLY = 100000000 * 10**18;
+    uint256 public constant INITIAL_SUPPLY = 5000000 * 10**18;
     address private primary;
 
-    constructor() public ERC20("REKT", "REKT") {
+    constructor() public ERC20("Unifty", "NIF") {
         _setupDecimals(18);
         _mint(msg.sender, INITIAL_SUPPLY);
         primary = msg.sender;
